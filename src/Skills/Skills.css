@@ -1,0 +1,25 @@
+.skills-container {
+    color: white;
+    padding-top: 60px;
+}
+
+.skills-content {
+    height: auto; 
+    display: flex; 
+    flex-wrap: wrap; 
+}
+
+.skills-container h2 {
+    padding-bottom: 20px;
+    text-align: start;
+    font-size: 40px;
+}
+
+.skill-span {
+    padding: 10px 15px; 
+    border-radius: 5px;
+    background-color: #1F2937;
+    margin: 10px; 
+    font-size: 15px;
+    flex: 1 0 auto;
+}

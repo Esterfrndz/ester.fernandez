@@ -1,0 +1,35 @@
+.Experience-container{
+
+    color: white;
+    padding-top: 60px;
+}
+
+.Experience-container h2{
+
+font-size: 40px;
+align-items: start;
+text-align: start;
+padding-bottom: 20px;
+
+
+}
+
+.exp-cards{
+
+    align-items: start;
+    text-align: start;
+    
+}
+
+.exp-cards h3{
+    font-weight: 500;
+    font-size: 20px;
+    
+}
+
+.card-container{
+    background-color: #1F2937;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+}

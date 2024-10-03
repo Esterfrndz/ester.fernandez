@@ -1,0 +1,64 @@
+.Section-container{
+
+
+    color: white;
+    padding-top: 60px;
+   
+   
+    
+}
+
+.Section-container h2{
+    padding-bottom: 20px;
+    font-size: 40px;
+    text-align: start;
+}
+
+/* Cards */
+
+.projects{
+
+    align-items: start;
+    text-align: start;
+   display: flex;
+   text-align: center;
+   align-items: center;
+   
+
+
+}
+
+.project-container{
+
+
+background-color: #1F2937;
+margin-right: 20px;
+border-radius: 5px;
+padding: 10px;
+box-shadow: 3px 5px 10px 1px #494747a9;
+text-align: center;
+
+
+ 
+
+}
+
+
+.project-container button{
+
+width: 50%;
+height: 40px;
+font-size: 11px;
+
+font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+border-radius: 5px;
+cursor: pointer;
+
+}
+
+
+.project-container button:hover{
+
+background-color: #d6d2d7;
+
+}

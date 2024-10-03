@@ -1,23 +1,36 @@
-import logo from './logo.svg';
 import './App.css';
+import Header from './Header/header.js';
+import AboutMe from './AboutMe/AboutMe.js';
+import Projects from './Projects/Projects.js';
+import Skills from './Skills/Skills.js';
+import Experience from './Experience/Experience.js';
+
+const fadeInUp = {
+  initial: { opacity: 0, y: 20 },
+  animate: { opacity: 1, y: 0 },
+  transition: { duration: 0.5 }
+}
+
+const stagger = {
+  animate: {
+    transition: {
+      staggerChildren: 0.1
+    }
+  }
+}
+
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <main className="main-container">
+    <Header/>
+    <AboutMe fadeInUp={fadeInUp}/>
+    <Projects fadeInUp={fadeInUp} />
+    <Skills fadeInUp={fadeInUp} stagger={stagger} />
+    <Experience fadeInUp={fadeInUp}  />
+    </main>
+
     </div>
   );
 }
