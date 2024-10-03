@@ -11,3 +11,8 @@
 
     font-size: 40px;
 }
+
+.aboutMe-container p{
+
+    text-align: justify;
+}

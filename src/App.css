@@ -24,3 +24,49 @@
     padding: 25px 20px 25px; /* Reduce el padding lateral para dispositivos móviles */
   }
 }
+
+/* Optimización para iPad (entre 768px y 1024px) */
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  .App {
+    padding: 25px 100px; /* Reduce el padding lateral para ajustarse mejor en pantallas de iPad */
+  }
+
+  .main-container {
+    padding: 20px 30px; /* Ajusta el padding interno en el contenedor principal */
+    box-shadow: 2px 4px 8px 1px #494747a9; /* Ajusta ligeramente la sombra para un efecto más sutil */
+  }
+
+
+}
+
+
+
+
+
+@media only screen and (min-width: 1040px) {
+
+  .main-container{
+
+    padding: 30px 80px 30px;
+    box-shadow: 3px 5px 10px 1px #494747a9;
+  } 
+
+
+}
+
+
+
+@media only screen and (min-width: 1540px) {
+
+    
+  .main-container{
+
+    padding: 30px 180px 30px;
+    box-shadow: 3px 5px 10px 1px #494747a9;
+  }
+
+
+
+
+
+}

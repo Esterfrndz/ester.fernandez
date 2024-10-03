@@ -62,3 +62,86 @@ cursor: pointer;
 background-color: #d6d2d7;
 
 }
+
+/* Optimización para iPhone (pantallas pequeñas menores de 767px) */
+@media only screen and (max-width: 767px) {
+    .Section-container {
+      padding-top: 30px; /* Reducir el espacio superior */
+    }
+  
+    .Section-container h2 {
+      font-size: 30px; /* Ajustar tamaño del título */
+    }
+  
+    .projects {
+      flex-direction: column; /* Apilar tarjetas verticalmente */
+      align-items: center;
+      gap: 40px;
+    }
+  
+    .project-container {
+      margin-right: 0;
+      width: 90%; /* Ajustar el ancho para que no ocupe todo el espacio en móvil */
+    }
+  
+    .project-container button {
+      width: 80%; /* Botón más ancho en pantallas pequeñas */
+    }
+  }
+
+  /* Optimización para iPad (entre 768px y 1024px) */
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+    .Section-container {
+      padding-top: 40px; /* Ajustar el padding superior */
+    }
+  
+    .Section-container h2 {
+      font-size: 35px; /* Ajustar tamaño del título */
+    }
+  
+    .projects {
+      flex-wrap: wrap; /* Permitir que las tarjetas se ajusten en varias filas */
+      justify-content: space-around;
+      gap:40px;
+    }
+  
+    .project-container {
+      width: 45%; /* Ajustar el ancho de las tarjetas para que quepan dos por fila en iPad */
+    }
+  
+    .project-container button {
+      width: 60%; /* Ajustar el ancho del botón */
+    }
+  }
+
+
+  /* Optimización para MacBook (pantallas mayores a 1280px) */
+@media only screen and (min-width: 1280px) {
+    .Section-container {
+      padding-top: 80px; /* Aumentar el espacio superior para pantallas más grandes */
+    }
+  
+    .Section-container h2 {
+      font-size: 45px; /* Aumentar el tamaño del título */
+    }
+  
+    .projects {
+      justify-content: space-between;
+      gap: 50px; /* Más espacio entre tarjetas */
+    }
+  
+    .project-container {
+      width: 30%; /* Ajustar el ancho de las tarjetas para que quepan tres por fila en MacBook */
+      margin-right: 0;
+     
+      
+      
+    }
+  
+    .project-container button {
+      width: 50%;
+       /* Ajustar el ancho del botón */
+    }
+  }
+
+  

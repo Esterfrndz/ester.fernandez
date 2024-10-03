@@ -9,12 +9,12 @@ const projects = [
     }, 
     {
       id: 2,
-      name: "Gestión de Parking",
-      description: "Sistema de gestión de parking para optimizar la asignación de plazas de aparcamiento"
+      name: "Gestor de Parking",
+      description: "Permite gestionar las plazas de un aparcamiento"
     },{
       id: 3,
       name: "iGame API",
-      description: "API de productos gaming que te permite acceder a información detallada sobre las y tendencias del mundo gaming mediante métodos GET."
+      description: "Obten la información de productos gaming registrados"
     },
     ,
   ];
