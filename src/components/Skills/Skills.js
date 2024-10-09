@@ -1,6 +1,6 @@
 
 import { motion } from "framer-motion"
-import '../Skills/Skills.css';
+import './Skills.css';
 
 
 function Skills({ fadeInUp, stagger }){

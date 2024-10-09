@@ -1,15 +1,15 @@
 import { motion } from "framer-motion";
 import PropTypes from 'prop-types';
-import '../AboutMe/AboutMe.css';
+import './AboutMe.css';
 
 function AboutMe({ fadeInUp }) {
   return (
     <motion.section className="mb-16 aboutMe-container" {...fadeInUp}>
       <h2 className="mb-4 text-2xl font-semibold">Sobre mí</h2>
-      <p className="text-gray-300">
-      Soy un desarrollador web al que le encanta la tecnología y el diseño de sitios web. Mi objetivo es crear experiencias digitales que sean divertidas, útiles y bien diseñadas. Quiero seguir aprendiendo y probando cosas nuevas para mejorar en mi trabajo. Cada proyecto es una oportunidad para mejorar y crear nuevas ideas que hagan que el sitio web sea más fácil y amigable para el usuario.<br></br>
+      <p className="text-gray-300 text"> 
+      Soy una desarrolladora web a la que le encanta la tecnología y el diseño de sitios web. Mi objetivo es crear experiencias digitales que sean divertidas, útiles y bien diseñadas. Quiero seguir aprendiendo y probando cosas nuevas para mejorar en mi trabajo. Cada proyecto es una oportunidad para mejorar y crear nuevas ideas que hagan que el sitio web sea más fácil y amigable para el usuario.<br></br><br></br>
 
-      <p>La tecnología cambió mi vida y quiero vivir de ello, dedicándome a crear experiencias digitales atractivas, funcionales y optimizadas.</p>
+      La tecnología cambió mi vida y quiero vivir de ello, dedicándome a crear experiencias digitales atractivas, funcionales y optimizadas.
       </p>
     </motion.section>
   );

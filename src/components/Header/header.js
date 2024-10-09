@@ -1,10 +1,15 @@
 import React from 'react';
-import '../Header/header.css';
+import Typewriter from 'typewriter-effect';
+import './header.css';
 import { motion } from 'framer-motion';
-import foto from '../assets/perfil.png';
+import foto from '/Users/esterfernandez/portfolioFrndz/portfolio.frndz/src/assets/perfil.png';
 
 
 function Header() {
+
+ 
+
+
   return (
     <motion.header
       className="mb-16 text-center"
@@ -28,14 +33,33 @@ function Header() {
       >
         Ester Fernández
       </motion.h1>
-      <motion.p
+
+      
+        <Typewriter
+          options={{
+            loop: true,
+            delay: 75,
+           
+          }}
+          onInit={(typewriter) => {
+            typewriter
+              .typeString('<span style="color: #FFFFFF;">Frontend Developer </span>')
+              .pauseFor(2000)
+              .deleteAll()
+              .typeString('<span style="color: #FFFFFF;">Tech Person  </span>')
+              .start();
+          }}
+        />
+      
+
+      {/* <motion.p
         className="mt-2 text-xl text-gray-400 titulo2"
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ delay: 0.4, duration: 0.5 }}
       >
         Frontend Developer
-      </motion.p>
+      </motion.p> */}
     </motion.header>
   );
 }

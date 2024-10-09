@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion';
-import '../Experience/Experience.css';
+import './Experience.css';
 
 function Experience({ fadeUp, fadeInUp }) {
   const jobs = [

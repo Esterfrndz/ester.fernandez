@@ -1,9 +1,11 @@
 import './App.css';
-import Header from './Header/header.js';
-import AboutMe from './AboutMe/AboutMe.js';
-import Projects from './Projects/Projects.js';
-import Skills from './Skills/Skills.js';
-import Experience from './Experience/Experience.js';
+import Header from './components/Header/header.js';
+import AboutMe from './components/AboutMe/AboutMe.js';
+import Projects from './components/Projects/Projects.js';
+import Skills from './components/Skills/Skills.js';
+import Experience from './components/Experience/Experience.js';
+import PopUpCv from './components/PopUp/PopUp.js';
+import FloatingButton from './components/FloatingButton/FloatingButton.js';
 
 const fadeInUp = {
   initial: { opacity: 0, y: 20 },
@@ -23,12 +25,16 @@ const stagger = {
 function App() {
   return (
     <div className="App">
-      <main className="main-container">
+      <main className="main-container"> 
+      
+    <PopUpCv/>
+    {/* <FloatingButton/> */}
     <Header/>
     <AboutMe fadeInUp={fadeInUp}/>
     <Projects fadeInUp={fadeInUp} />
     <Skills fadeInUp={fadeInUp} stagger={stagger} />
-    <Experience fadeInUp={fadeInUp}  />
+    <Experience fadeInUp={fadeInUp}/>
+   
     </main>
 
     </div>

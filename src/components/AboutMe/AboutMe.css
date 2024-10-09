@@ -1,8 +1,8 @@
 .aboutMe-container{
-    padding-top: 30px;
+    padding-top: 80px;
     color: white;
     justify-content: start;
-    text-align: start;
+    text-align: start;padding-top: 30px;
     
 
 }
@@ -10,9 +10,12 @@
 .aboutMe-container h2{
 
     font-size: 40px;
+    padding-top: 20px;
 }
 
 .aboutMe-container p{
-
+    
     text-align: justify;
+    padding-top: 30px;
+    
 }
