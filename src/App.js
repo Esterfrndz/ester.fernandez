@@ -28,7 +28,7 @@ function App() {
       <main className="main-container"> 
       
     <PopUpCv/>
-    {/* <FloatingButton/> */}
+    <FloatingButton/>
     <Header/>
     <AboutMe fadeInUp={fadeInUp}/>
     <Projects fadeInUp={fadeInUp} />
