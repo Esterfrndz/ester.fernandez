@@ -1,20 +1,25 @@
 import './Projects.css';
 import { motion } from "framer-motion"
 
+
+
 const projects = [
    {
-      id: 2,
-      name: "Adopta.me",
-      description: "Web para la adopción de animales y tienda para colaborar."
+      id: 1,
+      name: "Web Bar Churrería",
+      description: "Web de un negocio hostelero para la información de sus productos y servicios.",
+      url:""
     }, 
     {
       id: 2,
-      name: "Gestor de Parking",
-      description: "Permite gestionar las plazas de un aparcamiento"
+      name: "Adopta.me",
+      description: "Plataforma dedicada a conectar corazones con nuevas mascotas.",
+      url:"https://github.com/Esterfrndz/Adopta.me"
     },{
       id: 3,
       name: "iGame API",
-      description: "Obten la información de productos gaming registrados"
+      description: "Obten la información de productos gaming registrados",
+      url:"https://github.com/Esterfrndz/igame-api"
     },
     ,
   ];
@@ -38,7 +43,10 @@ return(
           >
             <h3 className="mb-2 text-xl font-semibold">{project.name}</h3>
             <p className="mb-4 text-gray-400">{project.description}</p>
-            <button><b>Ver proyecto</b></button>
+            
+            <a href={project.url} target="_blank" rel="noopener noreferrer">
+  <button><b>Ver proyecto</b></button>
+</a>
             
           </motion.div>
         ))}
