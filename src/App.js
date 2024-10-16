@@ -30,7 +30,7 @@ function App() {
       <main className="main-container">
         {/* <PopUpCv/> */}
 
-        <FloatingButton/>
+        {/* <FloatingButton/> */}
         <section id="home">
           <Header />
         </section>
