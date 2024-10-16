@@ -3,28 +3,94 @@
     top: 0;
     left: 0;
     right: 0;
-    background-color: #333;
+    background-color: #747272f8;
     color: white;
     transition: transform 0.3s ease;
     z-index: 1000;
+    width: 50%;
+    height: 60px;
+    margin: 0 auto;
+    margin-top: 15px;
+    border-radius: 10px;
+
+
 }
 
 .nav-visible {
-    transform: translateY(0);
+    transform: translateY(200);
 }
 
 .nav-hidden {
-    transform: translateY(-100%);
+    transform: translateY(-150%);
 }
 
 .navigation ul {
     list-style: none;
     display: flex;
     justify-content: space-around;
-    padding: 10px;
+    
 }
 
 .navigation a {
     color: white;
     text-decoration: none;
+    font-weight: 500;
+    font-size: 18px;
+    padding: 10px;
+    text-shadow: rgb(117, 116, 114) 1px 0 10px;
+}
+
+.navigation a:hover {
+
+
+    border-radius: 5px;
+    padding: 15px;
+    background-color: rgba(240, 248, 255, 0.113);
+  
+
+
+}
+
+
+
+
+
+/* Optimitation for Iphone */
+
+@media only screen and (max-width: 767px) {
+    .navigation {
+        width: 80%; /* Ocupar todo el ancho en pantallas pequeñas */
+        height: 55px;
+        margin-top: 10px; /* Ajustar el margen superior */ 
+        
+        
+    }
+
+    .navigation a {
+        font-size: 14px; /* Reduce más el tamaño de fuente */
+        padding-right: 30px; /* Ajustar padding para pantallas pequeñas */
+        align-items: center;
+       
+    }
+
+    .navigation a:hover {
+        border-radius: none; /* No hay cambio en el borde */
+        padding: 0; /* No hay padding adicional */
+        background-color: transparent; /* Sin color de fondo */
+    }
+
+}
+
+/* Optimitation for Ipad */
+
+@media only screen and (max-width: 1024px) and (min-width: 768px) {
+    .navigation {
+        width: 85%; /* Ajusta el ancho para pantallas de iPad */
+        margin-top: 10px; /* Ajustar el margen superior */
+    }
+
+    .navigation a {
+        font-size: 16px; /* Reduce el tamaño de fuente un poco */
+        padding: 12px; /* Ajusta el padding para un mejor espaciado */
+    }
 }

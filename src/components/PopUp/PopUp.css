@@ -51,12 +51,16 @@
     word-wrap: break-word;
     width:100%;
     font-weight: 600;
-    padding: 20px;
+    padding-top: 10px;
+    
     font-size: 18px;
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     
     
 }
+
+
+
 
 /* Text description 2 */
 
@@ -149,60 +153,58 @@ font-size: 20px;
   }
 
   /* Estilos específicos para iPhone */
-@media only screen and (max-width: 767px) {
+  @media only screen and (max-width: 767px) {
+    .popup_content {
+        display: flex; /* Asegúrate de que sea un contenedor flex */
+        flex-direction: column; /* Cambia la disposición a columna */
+        height: auto;
+        max-width: 90%;
+        align-items: center; /* Centra horizontalmente */
+        justify-content: center; /* Centra verticalmente */
+        margin: 0 auto; /* Centra el popup en la pantalla */
+    }
   
+    .content_text {
+        padding: 30px; /* Reduce el padding */
+        text-align: center; /* Centra el texto */
+    }
   
+    .content_text h2 {
+        font-size: 20px; /* Ajusta el tamaño del título */
+    }
   
-  .popup_content {
-      flex-direction: column; /* Cambia la disposición a columna */
-      height: auto;
-      max-width: 90%;
-      align-items: center;
-    
+    .subs-btn {
+        width: 100%;
+        margin-left: 0;
+    }
+  
+    .close-btn {
+        position: absolute;
+        top: 10px;
+        left: 50%; /* Ajusta para centrar horizontalmente */
+        transform: translateX(-50%); /* Ajusta el botón a la izquierda para centrar */
+        background: none;
+        font-size: 40px;
+        cursor: pointer;
+        color: white;
+        border: none;
+        animation: btnMovimiento 1s infinite ease-in-out;
+    }
+  
+    .content_text input {
+        width: 80%;
+        align-items: center;
+    }
+  
+    /* Texto */
+    .popup_content p {
+        font-size: 15px;
+        align-items: center;
+        text-align: center; /* Asegúrate de que el texto esté centrado */
+        justify-content: center;
+    }
   }
-
   
-
-  .content_text {
-      padding: 30px; /* Reduce el padding */
-
-      
-  }
-
-  .content_text h2 {
-      font-size: 20px; /* Ajusta el tamaño del título */
-     
-  }
-
-  
-
-  .subs-btn {
-      width: 100%;
-      margin-left: 0;
-  }
-
-  .close-btn {
-    position: absolute;
-    top: 10px;
-    left:200px;
-    background: none;
-    /* border: 1px solid white; */
-    font-size: 40px;
-    cursor: pointer;
-    color: white;
-    border:none;
-    animation: btnMovimiento 1s infinite ease-in-out;
-}
-
-.content_text input{
-
-  width: 80%;
-  align-items: center;
-
-}
-
-
-}
 
 /* Estilos específicos para iPad */
 @media only screen and (min-width: 768px) and (max-width: 1024px) {

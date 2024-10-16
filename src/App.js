@@ -9,41 +9,44 @@ import PopUpCv from './components/PopUp/PopUp.js';
 import FloatingButton from './components/FloatingButton/FloatingButton.js';
 import Navigation from './components/NavBar/NavBar.js';
 
-
 const fadeInUp = {
   initial: { opacity: 0, y: 20 },
   animate: { opacity: 1, y: 0 },
-  transition: { duration: 0.5 }
-}
+  transition: { duration: 0.5 },
+};
 
 const stagger = {
   animate: {
     transition: {
-      staggerChildren: 0.1
-    }
-  }
-}
-
+      staggerChildren: 0.1,
+    },
+  },
+};
 
 function App() {
   return (
     <div className="App">
+      <Navigation />
+      <main className="main-container">
+        {/* <PopUpCv/> */}
 
-      <Navigation/>
-      <main className="main-container"> 
-    
-    <PopUpCv/>
-    
-    {/* <FloatingButton/> */}
-    <Header/>
-    <AboutMe fadeInUp={fadeInUp}/>
-    <Projects fadeInUp={fadeInUp} />
-    <Skills fadeInUp={fadeInUp} stagger={stagger} />
-    <Experience fadeInUp={fadeInUp}/>
-    
-   
-    </main>
-
+        <FloatingButton/>
+        <section id="home">
+          <Header />
+        </section>
+        <section id="about">
+          <AboutMe fadeInUp={fadeInUp} />
+        </section>
+        <section id="projects">
+          <Projects fadeInUp={fadeInUp} />
+        </section>
+        <section id="skills">
+          <Skills fadeInUp={fadeInUp} stagger={stagger} />
+        </section>
+        <section id="experience">
+          <Experience fadeInUp={fadeInUp} />
+        </section>
+      </main>
     </div>
   );
 }

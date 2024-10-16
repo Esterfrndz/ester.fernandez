@@ -7,7 +7,7 @@ const projects = [
    {
       id: 1,
       name: "Web Bar Churrería",
-      description: "Web de un negocio hostelero para la información de sus productos y servicios.",
+      description: "Negocio hostelero informando de sus productos y servicios.",
       url:""
     }, 
     {
@@ -32,7 +32,7 @@ function Projects({ fadeInUp }){
 
 return(
     <motion.section className="mb-16 Section-container" {...fadeInUp}>
-      <h2 className="mb-4 text-2xl font-semibold">Projects</h2>
+      <h2 className="mb-4 text-2xl font-semibold">Proyectos</h2>
       <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3 projects">
       {projects.map((project) => (
           <motion.div 
