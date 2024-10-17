@@ -3,21 +3,21 @@
     top: 0;
     left: 0;
     right: 0;
-    background-color: #747272f8;
+    background: linear-gradient(145deg, #747272f8, #474747);
     color: white;
-    transition: transform 0.3s ease;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
     z-index: 1000;
-    width: 50%;
-    height: 60px;
+    width: 40%;
+    height: 55px;
     margin: 0 auto;
     margin-top: 15px;
     border-radius: 10px;
-
-
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.5); /* Sombra para efecto 3D */
+    transform: perspective(500px) translateZ(30px); /* Efecto 3D */
 }
 
 .nav-visible {
-    transform: translateY(200);
+    transform: perspective(500px) translateZ(30px) translateY(0); /* Posición normal con 3D */
 }
 
 .nav-hidden {
@@ -28,69 +28,65 @@
     list-style: none;
     display: flex;
     justify-content: space-around;
-    
 }
 
 .navigation a {
     color: white;
     text-decoration: none;
     font-weight: 500;
-    font-size: 18px;
-    padding: 10px;
+    font-size: 16px;
+    padding: 0px;
     text-shadow: rgb(117, 116, 114) 1px 0 10px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Añadir animación */
 }
 
 .navigation a:hover {
-
-
     border-radius: 5px;
     padding: 15px;
     background-color: rgba(240, 248, 255, 0.113);
-  
-
-
+    transform: perspective(500px) translateZ(10px); /* Efecto 3D en hover */
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3); /* Sombra en hover */
 }
 
 
 
-
-
-/* Optimitation for Iphone */
-
+/* Optimización para iPhone */
 @media only screen and (max-width: 767px) {
     .navigation {
-        width: 80%; /* Ocupar todo el ancho en pantallas pequeñas */
-        height: 55px;
-        margin-top: 10px; /* Ajustar el margen superior */ 
-        
-        
+        width: 80%; /* Aumentar el ancho para usar mejor el espacio */
+        height: 50px; /* Reducir un poco la altura */
+        margin-top: 15px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Mantener una sombra más ligera */
+    }
+
+    .navigation ul {
+        padding: 0; /* Asegurar que no haya padding alrededor de los elementos */
     }
 
     .navigation a {
-        font-size: 14px; /* Reduce más el tamaño de fuente */
-        padding-right: 30px; /* Ajustar padding para pantallas pequeñas */
-        align-items: center;
-       
+        font-size: 11px;
+        padding: 8px; /* Ajustar padding para evitar desbordes */
+        text-align: center; /* Alinear el texto al centro */
     }
 
     .navigation a:hover {
-        border-radius: none; /* No hay cambio en el borde */
-        padding: 0; /* No hay padding adicional */
-        background-color: transparent; /* Sin color de fondo */
+        border-radius: 5px;
+        padding: 8px; /* Mantener un padding mínimo */
+        background-color: rgba(240, 248, 255, 0.1);
+        box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2); /* Sombra más ligera */
     }
-
 }
 
-/* Optimitation for Ipad */
 
+/* Optimización para iPad */
 @media only screen and (max-width: 1024px) and (min-width: 768px) {
     .navigation {
-        width: 85%; /* Ajusta el ancho para pantallas de iPad */
-        margin-top: 10px; /* Ajustar el margen superior */
+        width: 85%;
+        margin-top: 15px;
     }
 
     .navigation a {
-        font-size: 16px; /* Reduce el tamaño de fuente un poco */
-        padding: 12px; /* Ajusta el padding para un mejor espaciado */
+        font-size: 16px;
+        padding: 12px;
     }
 }

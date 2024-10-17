@@ -28,7 +28,7 @@ function App() {
     <div className="App">
       <Navigation />
       <main className="main-container">
-        {/* <PopUpCv/> */}
+        <PopUpCv/>
 
         {/* <FloatingButton/> */}
         <section id="home">

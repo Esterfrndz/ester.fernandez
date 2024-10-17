@@ -69,7 +69,7 @@ function PopUpCV() {
             <p className='description'>
               Recibe por correo electrónico mi CV más detallado y con toda la información sobre mi experiencia laboral y mi formación.
             </p>
-            <p className='email'>👇Introduce tu correo electrónico👇</p>
+            
             <form onSubmit={sendEmail}>
               <input 
                 type="email" 
