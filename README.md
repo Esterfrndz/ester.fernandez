@@ -1,70 +1,65 @@
-# Getting Started with Create React App
+# Portfolio Personal ✨
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Este es mi portfolio personal, donde muestro mis proyectos y habilidades como desarrolladora frontend. El sitio web está diseñado para resaltar mi experiencia y las tecnologías con las que trabajo. ¡Gracias por visitarlo!
 
-## Available Scripts
+## Demo 🚀
 
-In the project directory, you can run:
+Puedes ver una demo en vivo [aquí](https://efernandez.vercel.app/).
 
-### `npm start`
+## Tecnologías Utilizadas 💻
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- React.js: Para la construcción de la interfaz de usuario.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+-Next.js: Para la optimización de la página y SSR (Server-Side Rendering).
 
-### `npm test`
+-Framer Motion: Animaciones interactivas.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+-CSS3 / SCSS: Estilización moderna y responsive.
 
-### `npm run build`
+-NextUI: Para componentes UI preconstruidos.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+-Typewriter.js: Efecto de máquina de escribir para el header.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+##Características 🛠️
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+-Animaciones personalizadas: Animación en la portada donde mi nombre aparece desde los extremos hacia el medio.
 
-### `npm run eject`
+-Landing Page: Diseño limpio y minimalista que empieza tras la animación inicial.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+-Responsive Design: Adaptado para dispositivos móviles y pantallas de escritorio.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+-Componentes reutilizables: Uso de componentes personalizados como Header, Navigation, PopUpCV, Projects.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+-Formulario de contacto: Los visitantes pueden enviarme sus datos o solicitar recibir newsletters.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+## Instalación 📦
 
-## Learn More
+1. Clona el repositorio:
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+### `git clone https://github.com/tu-usuario/tu-repositorio.git`
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+2.Navega al directorio del proyecto:
 
-### Code Splitting
+### `cd tu-repositorio`
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+3. Instala las dependencias:
 
-### Analyzing the Bundle Size
+###npm install
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+4.Inicia el servidor de desarrollo:
 
-### Making a Progressive Web App
+### `npm run dev`
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+## Uso 📂
 
-### Advanced Configuration
+1. Edita los archivos en la carpeta `src/` para personalizar tu información personal.
+2. Modifica los componentes de React para agregar nuevos proyectos o actualizar el contenido.
+3. Personaliza los estilos en los archivos .scss para darle tu toque personal.
+   
+## Contribuciones 🤝
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+Si deseas contribuir a este proyecto, por favor crea un pull request o abre un issue para discutir el cambio que deseas implementar.
 
-### Deployment
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
 
-### `npm run build` fails to minify
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
