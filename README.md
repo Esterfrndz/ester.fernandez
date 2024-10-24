@@ -20,7 +20,7 @@ Puedes ver una demo en vivo [aquí](https://efernandez.vercel.app/).
 
 -Typewriter.js: Efecto de máquina de escribir para el header.
 
-## Características 🛠️
+
 
 -Animaciones personalizadas: Animación en la portada donde mi nombre aparece desde los extremos hacia el medio.
 
