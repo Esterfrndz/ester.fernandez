@@ -2,7 +2,7 @@ import React from 'react';
 import Typewriter from 'typewriter-effect';
 import './header.css';
 import { motion } from 'framer-motion';
-import foto from '/Users/esterfernandez/portfolio.frndz/src/assets/perfil.png';
+import foto from '../../assets/perfil.png';
 
 
 function Header() {
