@@ -78,6 +78,26 @@
 }
 
 
+/* Botón descargar cv */
+
+.cv-button {
+    background-color: antiquewhite;
+    color: #333;
+    padding: 10px 15px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    position: fixed; /* Fija el botón en la parte superior derecha */
+    right: 20px;
+    top: 20px;
+}
+
+.cv-button:hover {
+    background-color: #e6cdbd;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+
 /* Optimización para iPad */
 @media only screen and (max-width: 1024px) and (min-width: 768px) {
     .navigation {

@@ -28,6 +28,7 @@ const Navigation = () => {
   }, [lastScrollY]);
 
   return (
+    <div className='nav-container'>
     <nav className={`navigation ${showNav ? 'nav-visible' : 'nav-hidden'}`}>
       <ul>
         <li>
@@ -52,6 +53,12 @@ const Navigation = () => {
         </li>
       </ul>
     </nav>
+
+<a href="/efernandez.pdf" className="cv-button" download="efernandez.pdf">Descargar CV</a>
+
+</div>
+
+
   );
 };
 
