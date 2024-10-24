@@ -7,7 +7,7 @@
     color: white;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     z-index: 1000;
-    width: 40%;
+    width: 40%; /* Cambia esto en media queries */
     height: 55px;
     margin: 0 auto;
     margin-top: 15px;
@@ -28,29 +28,29 @@
     list-style: none;
     display: flex;
     justify-content: space-around;
+    padding: 0; /* Asegurarse de que no haya padding adicional */
+    margin: 0; /* Asegurarse de que no haya margen adicional */
 }
 
 .navigation a {
     color: white;
     text-decoration: none;
     font-weight: 500;
-    font-size: 16px;
-    padding: 0px;
+    font-size: 16px; /* Cambia esto en media queries */
+    padding: 0; /* Se ajustará en media queries */
     text-shadow: rgb(117, 116, 114) 1px 0 10px;
     transition: transform 0.3s ease, box-shadow 0.3s ease; /* Añadir animación */
 }
 
 .navigation a:hover {
     border-radius: 5px;
-    padding: 15px;
+    padding: 15px; /* Ajustar padding en hover */
     background-color: rgba(240, 248, 255, 0.113);
     transform: perspective(500px) translateZ(10px); /* Efecto 3D en hover */
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3); /* Sombra en hover */
 }
 
-
-
-/* Optimización para iPhone */
+/* Optimización para dispositivos móviles */
 @media only screen and (max-width: 767px) {
     .navigation {
         width: 80%; /* Aumentar el ancho para usar mejor el espacio */
@@ -59,27 +59,20 @@
         box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Mantener una sombra más ligera */
     }
 
-    .navigation ul {
-        padding: 0; /* Asegurar que no haya padding alrededor de los elementos */
-    }
-
     .navigation a {
-        font-size: 11px;
+        font-size: 14px; /* Ajustar tamaño de fuente para móviles */
         padding: 8px; /* Ajustar padding para evitar desbordes */
         text-align: center; /* Alinear el texto al centro */
     }
 
     .navigation a:hover {
-        border-radius: 5px;
         padding: 8px; /* Mantener un padding mínimo */
         background-color: rgba(240, 248, 255, 0.1);
         box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2); /* Sombra más ligera */
     }
 }
 
-
-/* Botón descargar cv */
-
+/* Botón descargar CV */
 .cv-button {
     background-color: antiquewhite;
     color: #333;
@@ -106,7 +99,20 @@
     }
 
     .navigation a {
-        font-size: 16px;
-        padding: 12px;
+        font-size: 16px; /* Tamaño de fuente adecuado para iPad */
+        padding: 12px; /* Ajustar padding */
+    }
+}
+
+/* Optimización para pantallas grandes */
+@media only screen and (min-width: 1025px) {
+    .navigation {
+        width: 40%; /* Mantener el ancho original */
+        height: 55px; /* Altura original */
+    }
+
+    .navigation a {
+        font-size: 16px; /* Tamaño de fuente para pantallas grandes */
+        padding: 10px; /* Ajustar padding */
     }
 }

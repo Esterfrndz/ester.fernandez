@@ -5,8 +5,7 @@ import AboutMe from './components/AboutMe/AboutMe.js';
 import Projects from './components/Projects/Projects.js';
 import Skills from './components/Skills/Skills.js';
 import Experience from './components/Experience/Experience.js';
-import PopUpCv from './components/PopUp/PopUp.js';
-import FloatingButton from './components/FloatingButton/FloatingButton.js';
+// import FloatingButton from './components/FloatingButton/FloatingButton.js';
 import Navigation from './components/NavBar/NavBar.js';
 
 const fadeInUp = {
@@ -28,8 +27,7 @@ function App() {
     <div className="App">
       <Navigation />
       <main className="main-container">
-        <PopUpCv/>
-
+        
         {/* <FloatingButton/> */}
         <section id="home">
           <Header />
