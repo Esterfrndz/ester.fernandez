@@ -3,11 +3,15 @@
     top: 0;
     left: 0;
     right: 0;
+    background-color: #747272f8;
     background: linear-gradient(145deg, #747272f8, #474747);
     color: white;
+    transition: transform 0.3s ease;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     z-index: 1000;
-    width: 40%; /* Cambia esto en media queries */
+    width: 50%;
+    height: 60px;
+    width: 40%;
     height: 55px;
     margin: 0 auto;
     margin-top: 15px;
@@ -24,28 +28,33 @@
     transform: translateY(-150%);
 }
 
+
 .navigation ul {
     list-style: none;
     display: flex;
     justify-content: space-around;
-    padding: 0; /* Asegurarse de que no haya padding adicional */
-    margin: 0; /* Asegurarse de que no haya margen adicional */
+    padding: 0px;
+    
 }
+
 
 .navigation a {
     color: white;
     text-decoration: none;
     font-weight: 500;
-    font-size: 16px; /* Cambia esto en media queries */
-    padding: 0; /* Se ajustará en media queries */
+    font-size: 18px;
+    padding: 10px;
+    font-size: 16px;
+    padding: 0px;
     text-shadow: rgb(117, 116, 114) 1px 0 10px;
     transition: transform 0.3s ease, box-shadow 0.3s ease; /* Añadir animación */
 }
 
 .navigation a:hover {
     border-radius: 5px;
-    padding: 15px; /* Ajustar padding en hover */
+    padding: 15px;
     background-color: rgba(240, 248, 255, 0.113);
+  
     transform: perspective(500px) translateZ(10px); /* Efecto 3D en hover */
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3); /* Sombra en hover */
 }
@@ -63,6 +72,7 @@
         font-size: 14px; /* Ajustar tamaño de fuente para móviles */
         padding: 8px; /* Ajustar padding para evitar desbordes */
         text-align: center; /* Alinear el texto al centro */
+
     }
 
     .navigation a:hover {
